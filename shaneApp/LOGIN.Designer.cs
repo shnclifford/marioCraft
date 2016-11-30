@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtBxUserName = new System.Windows.Forms.TextBox();
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
@@ -35,11 +36,18 @@
             this.lbl_Password = new System.Windows.Forms.Label();
             this.marioCraftPic = new System.Windows.Forms.PictureBox();
             this.linkRegister = new System.Windows.Forms.LinkLabel();
+            this.dataSet1 = new shaneApp.DataSet1();
+            this.gAMEUSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gAMEUSERTableAdapter = new shaneApp.DataSet1TableAdapters.GAMEUSERTableAdapter();
+            this.tableAdapterManager = new shaneApp.DataSet1TableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.marioCraftPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBxUserName
             // 
+            this.txtBxUserName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gAMEUSERBindingSource, "USEREMAIL", true));
             this.txtBxUserName.Location = new System.Drawing.Point(194, 274);
             this.txtBxUserName.Name = "txtBxUserName";
             this.txtBxUserName.Size = new System.Drawing.Size(251, 20);
@@ -47,10 +55,12 @@
             // 
             // txtBoxPassword
             // 
+            this.txtBoxPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gAMEUSERBindingSource, "USERPASSWORD", true));
             this.txtBoxPassword.Location = new System.Drawing.Point(194, 325);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(251, 20);
             this.txtBoxPassword.TabIndex = 1;
+            this.txtBoxPassword.TextChanged += new System.EventHandler(this.txtBoxPassword_TextChanged);
             // 
             // btn_Login
             // 
@@ -60,6 +70,7 @@
             this.btn_Login.TabIndex = 2;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // lbl_UserName
             // 
@@ -87,6 +98,7 @@
             this.marioCraftPic.Size = new System.Drawing.Size(406, 118);
             this.marioCraftPic.TabIndex = 5;
             this.marioCraftPic.TabStop = false;
+            this.marioCraftPic.Click += new System.EventHandler(this.marioCraftPic_Click);
             // 
             // linkRegister
             // 
@@ -97,6 +109,31 @@
             this.linkRegister.TabIndex = 6;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "Register";
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gAMEUSERBindingSource
+            // 
+            this.gAMEUSERBindingSource.DataMember = "GAMEUSER";
+            this.gAMEUSERBindingSource.DataSource = this.dataSet1;
+            // 
+            // gAMEUSERTableAdapter
+            // 
+            this.gAMEUSERTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.GAMEMAPTableAdapter = null;
+            this.tableAdapterManager.GAMEUSERTableAdapter = this.gAMEUSERTableAdapter;
+            this.tableAdapterManager.MATERIALTableAdapter = null;
+            this.tableAdapterManager.PLAYERTableAdapter = null;
+            this.tableAdapterManager.RUCKSACKTableAdapter = null;
+            this.tableAdapterManager.TOOLTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = shaneApp.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // LOGIN
             // 
@@ -117,6 +154,8 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.marioCraftPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +170,10 @@
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.PictureBox marioCraftPic;
         private System.Windows.Forms.LinkLabel linkRegister;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource gAMEUSERBindingSource;
+        private DataSet1TableAdapters.GAMEUSERTableAdapter gAMEUSERTableAdapter;
+        private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
 

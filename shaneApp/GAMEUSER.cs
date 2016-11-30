@@ -19,23 +19,32 @@ namespace shaneApp
         public GAMEUSER()
         {
             PLAYERs = new HashSet<PLAYER>();
+
         }
 
         [Key]
-        public byte USERID {
-            get { return userId; }
-            set { this.userId = userId;}
-            }
+        public byte USERID
+        {
+            get;
+            set;
+        }
 
         [StringLength(20)]
-        public string USEREMAIL { get {return userEmail; }
-                                  set {this.userEmail = userEmail;  }}
+        public string USEREMAIL
+        {
+            get;
+            set;
+        }
 
         [StringLength(20)]
-        public string USERPASSWORD { get {return userPassword;}
-                                     set { this.userPassword = userPassword; } }
+        public string USERPASSWORD
+        {
+            get;
+            set;
+        }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PLAYER> PLAYERs { get; set; }
     }
 }
+

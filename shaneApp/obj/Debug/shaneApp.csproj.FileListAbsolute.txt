@@ -1,1 +1,17 @@
 C:\students\Documents\Visual Studio 2015\Projects\shaneApp\shaneApp\bin\Debug\shaneApp.exe.config
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\shaneApp.exe.config
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\shaneApp.exe
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\shaneApp.pdb
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\EntityFramework.dll
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\EntityFramework.xml
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.csprojResolveAssemblyReference.cache
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.frmRegister.resources
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.LOGIN.resources
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.Properties.Resources.resources
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.csproj.GenerateResource.Cache
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.exe
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.pdb
