@@ -14,6 +14,8 @@ namespace shaneApp
         [STAThread]
         static void Main()
         {
+         //   LOGIN l;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LOGIN());

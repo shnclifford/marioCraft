@@ -50,6 +50,7 @@
             this.linkRegister.TabIndex = 12;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "Login";
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
             // 
             // lbl_Password
             // 
@@ -77,6 +78,7 @@
             this.btn_Register.TabIndex = 9;
             this.btn_Register.Text = "Register";
             this.btn_Register.UseVisualStyleBackColor = true;
+            this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
             // txtBxPassword
             // 
@@ -91,6 +93,7 @@
             this.txtBxUserName.Name = "txtBxUserName";
             this.txtBxUserName.Size = new System.Drawing.Size(251, 20);
             this.txtBxUserName.TabIndex = 7;
+            this.txtBxUserName.TextChanged += new System.EventHandler(this.txtBxUserName_TextChanged);
             // 
             // label1
             // 
