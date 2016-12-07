@@ -15,3 +15,5 @@ C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.Propert
 C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.csproj.GenerateResource.Cache
 C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.exe
 C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.pdb
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.UserView.resources
+C:\Users\t00183399\Desktop\marioCraft-master\shaneApp\obj\Debug\shaneApp.CurrentUser.resources

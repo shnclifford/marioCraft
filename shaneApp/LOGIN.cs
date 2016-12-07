@@ -12,7 +12,7 @@ namespace shaneApp
 {
     public partial class LOGIN : Form
     {
-        GAMEUSER user = new GAMEUSER();
+       
         //Model1 mdl = new Model1();
 
         frmRegister parent;
@@ -24,8 +24,7 @@ namespace shaneApp
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet1.GAMEUSER' table. You can move, or remove it, as needed.
-         //   this.gAMEUSERTableAdapter.Fill(this.dataSet1.GAMEUSER);
+           
 
         }
 
@@ -53,37 +52,41 @@ namespace shaneApp
                     txtBxUserName.Focus();
                 }
 
-                else if (!txtBxUserName.Equals(user.USEREMAIL) || !txtBoxPassword.Equals(user.USERPASSWORD))
-                {
-                    MessageBox.Show("Incorrect username or password", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               
 
-                    txtBxUserName.Focus();
-                }
-
-                else if (txtBxUserName.Equals(user.USEREMAIL) || txtBoxPassword.Equals(user.USERPASSWORD))
-                {
-                    MessageBox.Show("Successful Login", "Success", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                    txtBxUserName.Focus();
-                }
-
+             
                 else
                 {
 
-                    GAMEUSER gUser = new GAMEUSER();
-
-                    {
-                        gUser.USEREMAIL = txtBxUserName.Text;
-                        gUser.USERPASSWORD = txtBoxPassword.Text;
-                    };
 
                     try
                     {
+                         
+                      //  var res = contxt.GAMEUSERs.Where(a => txtBxUserName.Text.Equals(contxt.GAMEUSERDETAILS.Select(us)));
 
-                        var res = contxt.GAMEUSERs.Add(gUser);
-                        contxt.SaveChanges();
-                        MessageBox.Show("Successful Login", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+                        string res = (from c in contxt.GAMEUSERs where c.USEREMAIL == txtBxUserName.Text &&
+                                        c.USERPASSWORD == txtBoxPassword.Text select c.USEREMAIL).FirstOrDefault();
+
+
+                        if (res != null) {
+                        //    contxt.SaveChanges();
+                            MessageBox.Show("Successful Login", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                            //  MessageBox.Show (contxt.GAMEUSERDETAILS);
+
+                            UserView uV = new UserView();
+                            CurrentUser c = new CurrentUser(txtBxUserName.Text);
+                            this.Hide();
+
+                            c.Show();
+
+                           
+                                
+                        }
+
+                        else
+                            MessageBox.Show("Unsuccessful Login", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     }
 

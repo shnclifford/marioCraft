@@ -103,9 +103,10 @@
             // 
             // marioCraftPic
             // 
-            this.marioCraftPic.Location = new System.Drawing.Point(135, 45);
+            this.marioCraftPic.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.marioCraftPic.Location = new System.Drawing.Point(-8, 45);
             this.marioCraftPic.Name = "marioCraftPic";
-            this.marioCraftPic.Size = new System.Drawing.Size(406, 118);
+            this.marioCraftPic.Size = new System.Drawing.Size(666, 118);
             this.marioCraftPic.TabIndex = 5;
             this.marioCraftPic.TabStop = false;
             this.marioCraftPic.Click += new System.EventHandler(this.marioCraftPic_Click);
@@ -141,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(650, 513);
             this.Controls.Add(this.linkRegister);
             this.Controls.Add(this.marioCraftPic);
@@ -150,7 +151,7 @@
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txtBoxPassword);
             this.Controls.Add(this.txtBxUserName);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LOGIN";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.LOGIN_Load);

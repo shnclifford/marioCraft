@@ -58,7 +58,7 @@ namespace shaneApp
                 {
                     MessageBox.Show("Fields must not be empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                    txtBxUserName.Focus();
+                    txtEmail.Focus();
                 }
 
                 else
