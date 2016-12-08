@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmRucksack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRucksack.Designer.cs">
+      <DependentUpon>frmRucksack.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="TOOL.cs" />
     <EmbeddedResource Include="CurrentUser.resx">
       <DependentUpon>CurrentUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRucksack.resx">
+      <DependentUpon>frmRucksack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserView.resx">
       <DependentUpon>UserView.cs</DependentUpon>

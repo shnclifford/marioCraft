@@ -13,25 +13,23 @@ namespace shaneApp
     public partial class CurrentUser : Form
     {
 
-        String u;
+        String user;
 
         public CurrentUser()
         {
             InitializeComponent();
         }
 
-        public CurrentUser(String u)
+        public CurrentUser(String user)
         {
             InitializeComponent();
-            this.u = u;
+            this.user = user;
 
         }
 
         private void CurrentUser_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet1.GAMEUSERDETAILS' table. You can move, or remove it, as needed.
-            //      this.gAMEUSERDETAILSTableAdapter.Fill(this.dataSet1.GAMEUSERDETAILS);
-            this.gAMEUSERDETAILSTableAdapter.FillBy(dataSet1.GAMEUSERDETAILS, u);
+            this.gAMEUSERDETAILSTableAdapter.FillBy(dataSet1.GAMEUSERDETAILS, user);
         }
 
         private void admin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
